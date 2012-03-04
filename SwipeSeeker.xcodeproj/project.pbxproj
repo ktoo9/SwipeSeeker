@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6823144E14F90F0B00F91EC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6823144D14F90F0B00F91EC9 /* UIKit.framework */; };
+		6823145014F90F0B00F91EC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6823144F14F90F0B00F91EC9 /* Foundation.framework */; };
+		6823145214F90F0B00F91EC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6823145114F90F0B00F91EC9 /* CoreGraphics.framework */; };
+		6823145814F90F0B00F91EC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6823145614F90F0B00F91EC9 /* InfoPlist.strings */; };
+		6823145A14F90F0B00F91EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823145914F90F0B00F91EC9 /* main.m */; };
+		6823145E14F90F0B00F91EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823145D14F90F0B00F91EC9 /* AppDelegate.m */; };
+		6823146514F90F5100F91EC9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6823146414F90F5100F91EC9 /* AVFoundation.framework */; };
+		6823146714F90F6300F91EC9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6823146614F90F6300F91EC9 /* MediaPlayer.framework */; };
+		6823147114F9111900F91EC9 /* icon_audio.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823146914F9111900F91EC9 /* icon_audio.png */; };
+		6823147214F9111900F91EC9 /* icon_audio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823146A14F9111900F91EC9 /* icon_audio@2x.png */; };
+		6823147314F9111900F91EC9 /* icon_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823146B14F9111900F91EC9 /* icon_setting.png */; };
+		6823147414F9111900F91EC9 /* icon_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823146C14F9111900F91EC9 /* icon_setting@2x.png */; };
+		6823147514F9111900F91EC9 /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823146D14F9111900F91EC9 /* icon_video.png */; };
+		6823147614F9111900F91EC9 /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823146E14F9111900F91EC9 /* icon_video@2x.png */; };
+		6823147714F9111900F91EC9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823146F14F9111900F91EC9 /* Icon.png */; };
+		6823147814F9111900F91EC9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823147014F9111900F91EC9 /* Icon@2x.png */; };
+		6823148A14F9117E00F91EC9 /* SSListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823147B14F9117D00F91EC9 /* SSListController.m */; };
+		6823148B14F9117E00F91EC9 /* SSMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823147D14F9117D00F91EC9 /* SSMedia.m */; };
+		6823148C14F9117E00F91EC9 /* SSMediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823147F14F9117E00F91EC9 /* SSMediaManager.m */; };
+		6823148D14F9117E00F91EC9 /* SSPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823148114F9117E00F91EC9 /* SSPlayController.m */; };
+		6823148E14F9117E00F91EC9 /* SSSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823148314F9117E00F91EC9 /* SSSetting.m */; };
+		6823148F14F9117E00F91EC9 /* SSSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823148514F9117E00F91EC9 /* SSSettingController.m */; };
+		6823149014F9117E00F91EC9 /* SSSettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823148714F9117E00F91EC9 /* SSSettingManager.m */; };
+		6823149114F9117E00F91EC9 /* SSSettingPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823148914F9117E00F91EC9 /* SSSettingPickerView.m */; };
+		68BFF0FA14F92D34005EEA20 /* SSListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BFF0F914F92D34005EEA20 /* SSListCell.m */; };
+		68BFF0FD14F953FD005EEA20 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFF0FC14F953FD005EEA20 /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6823144914F90F0B00F91EC9 /* SwipeSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6823144D14F90F0B00F91EC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6823144F14F90F0B00F91EC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6823145114F90F0B00F91EC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6823145514F90F0B00F91EC9 /* SwipeSeeker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeSeeker-Info.plist"; sourceTree = "<group>"; };
+		6823145714F90F0B00F91EC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6823145914F90F0B00F91EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6823145B14F90F0B00F91EC9 /* SwipeSeeker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeSeeker-Prefix.pch"; sourceTree = "<group>"; };
+		6823145C14F90F0B00F91EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6823145D14F90F0B00F91EC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6823146414F90F5100F91EC9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6823146614F90F6300F91EC9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6823146914F9111900F91EC9 /* icon_audio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_audio.png; sourceTree = "<group>"; };
+		6823146A14F9111900F91EC9 /* icon_audio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_audio@2x.png"; sourceTree = "<group>"; };
+		6823146B14F9111900F91EC9 /* icon_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_setting.png; sourceTree = "<group>"; };
+		6823146C14F9111900F91EC9 /* icon_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_setting@2x.png"; sourceTree = "<group>"; };
+		6823146D14F9111900F91EC9 /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
+		6823146E14F9111900F91EC9 /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
+		6823146F14F9111900F91EC9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6823147014F9111900F91EC9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		6823147A14F9117D00F91EC9 /* SSListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSListController.h; sourceTree = "<group>"; };
+		6823147B14F9117D00F91EC9 /* SSListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSListController.m; sourceTree = "<group>"; };
+		6823147C14F9117D00F91EC9 /* SSMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMedia.h; sourceTree = "<group>"; };
+		6823147D14F9117D00F91EC9 /* SSMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMedia.m; sourceTree = "<group>"; };
+		6823147E14F9117E00F91EC9 /* SSMediaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMediaManager.h; sourceTree = "<group>"; };
+		6823147F14F9117E00F91EC9 /* SSMediaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMediaManager.m; sourceTree = "<group>"; };
+		6823148014F9117E00F91EC9 /* SSPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPlayController.h; sourceTree = "<group>"; };
+		6823148114F9117E00F91EC9 /* SSPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPlayController.m; sourceTree = "<group>"; };
+		6823148214F9117E00F91EC9 /* SSSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSetting.h; sourceTree = "<group>"; };
+		6823148314F9117E00F91EC9 /* SSSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSetting.m; sourceTree = "<group>"; };
+		6823148414F9117E00F91EC9 /* SSSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSettingController.h; sourceTree = "<group>"; };
+		6823148514F9117E00F91EC9 /* SSSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSettingController.m; sourceTree = "<group>"; };
+		6823148614F9117E00F91EC9 /* SSSettingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSettingManager.h; sourceTree = "<group>"; };
+		6823148714F9117E00F91EC9 /* SSSettingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSettingManager.m; sourceTree = "<group>"; };
+		6823148814F9117E00F91EC9 /* SSSettingPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSettingPickerView.h; sourceTree = "<group>"; };
+		6823148914F9117E00F91EC9 /* SSSettingPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSettingPickerView.m; sourceTree = "<group>"; };
+		68BFF0F814F92D34005EEA20 /* SSListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSListCell.h; sourceTree = "<group>"; };
+		68BFF0F914F92D34005EEA20 /* SSListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSListCell.m; sourceTree = "<group>"; };
+		68BFF0FC14F953FD005EEA20 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6823144614F90F0B00F91EC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68BFF0FD14F953FD005EEA20 /* CoreMedia.framework in Frameworks */,
+				6823146714F90F6300F91EC9 /* MediaPlayer.framework in Frameworks */,
+				6823146514F90F5100F91EC9 /* AVFoundation.framework in Frameworks */,
+				6823144E14F90F0B00F91EC9 /* UIKit.framework in Frameworks */,
+				6823145014F90F0B00F91EC9 /* Foundation.framework in Frameworks */,
+				6823145214F90F0B00F91EC9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6823143E14F90F0B00F91EC9 = {
+			isa = PBXGroup;
+			children = (
+				6823145314F90F0B00F91EC9 /* SwipeSeeker */,
+				6823144C14F90F0B00F91EC9 /* Frameworks */,
+				6823144A14F90F0B00F91EC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6823144A14F90F0B00F91EC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6823144914F90F0B00F91EC9 /* SwipeSeeker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6823144C14F90F0B00F91EC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6823146414F90F5100F91EC9 /* AVFoundation.framework */,
+				6823146614F90F6300F91EC9 /* MediaPlayer.framework */,
+				68BFF0FC14F953FD005EEA20 /* CoreMedia.framework */,
+				6823144D14F90F0B00F91EC9 /* UIKit.framework */,
+				6823144F14F90F0B00F91EC9 /* Foundation.framework */,
+				6823145114F90F0B00F91EC9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6823145314F90F0B00F91EC9 /* SwipeSeeker */ = {
+			isa = PBXGroup;
+			children = (
+				6823145C14F90F0B00F91EC9 /* AppDelegate.h */,
+				6823145D14F90F0B00F91EC9 /* AppDelegate.m */,
+				6823147A14F9117D00F91EC9 /* SSListController.h */,
+				6823147B14F9117D00F91EC9 /* SSListController.m */,
+				68BFF0F814F92D34005EEA20 /* SSListCell.h */,
+				68BFF0F914F92D34005EEA20 /* SSListCell.m */,
+				6823148014F9117E00F91EC9 /* SSPlayController.h */,
+				6823148114F9117E00F91EC9 /* SSPlayController.m */,
+				6823148414F9117E00F91EC9 /* SSSettingController.h */,
+				6823148514F9117E00F91EC9 /* SSSettingController.m */,
+				6823148814F9117E00F91EC9 /* SSSettingPickerView.h */,
+				6823148914F9117E00F91EC9 /* SSSettingPickerView.m */,
+				6823147914F9112800F91EC9 /* Model */,
+				6823146814F910F600F91EC9 /* Resources */,
+				6823145414F90F0B00F91EC9 /* Supporting Files */,
+			);
+			path = SwipeSeeker;
+			sourceTree = "<group>";
+		};
+		6823145414F90F0B00F91EC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6823145514F90F0B00F91EC9 /* SwipeSeeker-Info.plist */,
+				6823145614F90F0B00F91EC9 /* InfoPlist.strings */,
+				6823145914F90F0B00F91EC9 /* main.m */,
+				6823145B14F90F0B00F91EC9 /* SwipeSeeker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6823146814F910F600F91EC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6823146914F9111900F91EC9 /* icon_audio.png */,
+				6823146A14F9111900F91EC9 /* icon_audio@2x.png */,
+				6823146B14F9111900F91EC9 /* icon_setting.png */,
+				6823146C14F9111900F91EC9 /* icon_setting@2x.png */,
+				6823146D14F9111900F91EC9 /* icon_video.png */,
+				6823146E14F9111900F91EC9 /* icon_video@2x.png */,
+				6823146F14F9111900F91EC9 /* Icon.png */,
+				6823147014F9111900F91EC9 /* Icon@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6823147914F9112800F91EC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6823147E14F9117E00F91EC9 /* SSMediaManager.h */,
+				6823147F14F9117E00F91EC9 /* SSMediaManager.m */,
+				6823147C14F9117D00F91EC9 /* SSMedia.h */,
+				6823147D14F9117D00F91EC9 /* SSMedia.m */,
+				6823148614F9117E00F91EC9 /* SSSettingManager.h */,
+				6823148714F9117E00F91EC9 /* SSSettingManager.m */,
+				6823148214F9117E00F91EC9 /* SSSetting.h */,
+				6823148314F9117E00F91EC9 /* SSSetting.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6823144814F90F0B00F91EC9 /* SwipeSeeker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6823146114F90F0B00F91EC9 /* Build configuration list for PBXNativeTarget "SwipeSeeker" */;
+			buildPhases = (
+				6823144514F90F0B00F91EC9 /* Sources */,
+				6823144614F90F0B00F91EC9 /* Frameworks */,
+				6823144714F90F0B00F91EC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeSeeker;
+			productName = SwipeSeeker;
+			productReference = 6823144914F90F0B00F91EC9 /* SwipeSeeker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6823144014F90F0B00F91EC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 6823144314F90F0B00F91EC9 /* Build configuration list for PBXProject "SwipeSeeker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6823143E14F90F0B00F91EC9;
+			productRefGroup = 6823144A14F90F0B00F91EC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6823144814F90F0B00F91EC9 /* SwipeSeeker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6823144714F90F0B00F91EC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6823145814F90F0B00F91EC9 /* InfoPlist.strings in Resources */,
+				6823147114F9111900F91EC9 /* icon_audio.png in Resources */,
+				6823147214F9111900F91EC9 /* icon_audio@2x.png in Resources */,
+				6823147314F9111900F91EC9 /* icon_setting.png in Resources */,
+				6823147414F9111900F91EC9 /* icon_setting@2x.png in Resources */,
+				6823147514F9111900F91EC9 /* icon_video.png in Resources */,
+				6823147614F9111900F91EC9 /* icon_video@2x.png in Resources */,
+				6823147714F9111900F91EC9 /* Icon.png in Resources */,
+				6823147814F9111900F91EC9 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6823144514F90F0B00F91EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6823145A14F90F0B00F91EC9 /* main.m in Sources */,
+				6823145E14F90F0B00F91EC9 /* AppDelegate.m in Sources */,
+				6823148A14F9117E00F91EC9 /* SSListController.m in Sources */,
+				6823148B14F9117E00F91EC9 /* SSMedia.m in Sources */,
+				6823148C14F9117E00F91EC9 /* SSMediaManager.m in Sources */,
+				6823148D14F9117E00F91EC9 /* SSPlayController.m in Sources */,
+				6823148E14F9117E00F91EC9 /* SSSetting.m in Sources */,
+				6823148F14F9117E00F91EC9 /* SSSettingController.m in Sources */,
+				6823149014F9117E00F91EC9 /* SSSettingManager.m in Sources */,
+				6823149114F9117E00F91EC9 /* SSSettingPickerView.m in Sources */,
+				68BFF0FA14F92D34005EEA20 /* SSListCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6823145614F90F0B00F91EC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6823145714F90F0B00F91EC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6823145F14F90F0B00F91EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6823146014F90F0B00F91EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6823146214F90F0B00F91EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeSeeker/SwipeSeeker-Prefix.pch";
+				INFOPLIST_FILE = "SwipeSeeker/SwipeSeeker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6823146314F90F0B00F91EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shintarou Kinoshita";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shintarou Kinoshita";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeSeeker/SwipeSeeker-Prefix.pch";
+				INFOPLIST_FILE = "SwipeSeeker/SwipeSeeker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7132690F-6070-4856-8AB9-03AFB08B1A70";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7132690F-6070-4856-8AB9-03AFB08B1A70";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6823144314F90F0B00F91EC9 /* Build configuration list for PBXProject "SwipeSeeker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6823145F14F90F0B00F91EC9 /* Debug */,
+				6823146014F90F0B00F91EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6823146114F90F0B00F91EC9 /* Build configuration list for PBXNativeTarget "SwipeSeeker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6823146214F90F0B00F91EC9 /* Debug */,
+				6823146314F90F0B00F91EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6823144014F90F0B00F91EC9 /* Project object */;
+}
