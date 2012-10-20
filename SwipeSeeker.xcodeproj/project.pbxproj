@@ -31,8 +31,11 @@
 		6823148F14F9117E00F91EC9 /* SSSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823148514F9117E00F91EC9 /* SSSettingController.m */; };
 		6823149014F9117E00F91EC9 /* SSSettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823148714F9117E00F91EC9 /* SSSettingManager.m */; };
 		6823149114F9117E00F91EC9 /* SSSettingPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823148914F9117E00F91EC9 /* SSSettingPickerView.m */; };
+		68BC2B1B1632FF4E006EC8B3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BC2B1A1632FF4E006EC8B3 /* Default-568h@2x.png */; };
 		68BFF0FA14F92D34005EEA20 /* SSListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BFF0F914F92D34005EEA20 /* SSListCell.m */; };
 		68BFF0FD14F953FD005EEA20 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFF0FC14F953FD005EEA20 /* CoreMedia.framework */; };
+		96930CC6C3377D916E58C8B3 /* UINavigationController+RotationForiOS6.m in Sources */ = {isa = PBXBuildFile; fileRef = 969FF976C54F8FE735A18DF5 /* UINavigationController+RotationForiOS6.m */; };
+		969AB50293EC162BA2560D22 /* UITabBarController+RotationForiOS6.m in Sources */ = {isa = PBXBuildFile; fileRef = 96969FBF1931116431AA713D /* UITabBarController+RotationForiOS6.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,9 +75,14 @@
 		6823148714F9117E00F91EC9 /* SSSettingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSettingManager.m; sourceTree = "<group>"; };
 		6823148814F9117E00F91EC9 /* SSSettingPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSettingPickerView.h; sourceTree = "<group>"; };
 		6823148914F9117E00F91EC9 /* SSSettingPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSettingPickerView.m; sourceTree = "<group>"; };
+		68BC2B1A1632FF4E006EC8B3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		68BFF0F814F92D34005EEA20 /* SSListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSListCell.h; sourceTree = "<group>"; };
 		68BFF0F914F92D34005EEA20 /* SSListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSListCell.m; sourceTree = "<group>"; };
 		68BFF0FC14F953FD005EEA20 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9695F5DC0B0A5D1E9B40D11D /* UITabBarController+RotationForiOS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+RotationForiOS6.h"; sourceTree = "<group>"; };
+		96969FBF1931116431AA713D /* UITabBarController+RotationForiOS6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+RotationForiOS6.m"; sourceTree = "<group>"; };
+		969744B19BC2A2845CAD3F6E /* UINavigationController+RotationForiOS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RotationForiOS6.h"; sourceTree = "<group>"; };
+		969FF976C54F8FE735A18DF5 /* UINavigationController+RotationForiOS6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RotationForiOS6.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,10 @@
 				6823147914F9112800F91EC9 /* Model */,
 				6823146814F910F600F91EC9 /* Resources */,
 				6823145414F90F0B00F91EC9 /* Supporting Files */,
+				96969FBF1931116431AA713D /* UITabBarController+RotationForiOS6.m */,
+				9695F5DC0B0A5D1E9B40D11D /* UITabBarController+RotationForiOS6.h */,
+				969744B19BC2A2845CAD3F6E /* UINavigationController+RotationForiOS6.h */,
+				969FF976C54F8FE735A18DF5 /* UINavigationController+RotationForiOS6.m */,
 			);
 			path = SwipeSeeker;
 			sourceTree = "<group>";
@@ -160,6 +172,7 @@
 		6823146814F910F600F91EC9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				68BC2B1A1632FF4E006EC8B3 /* Default-568h@2x.png */,
 				6823146914F9111900F91EC9 /* icon_audio.png */,
 				6823146A14F9111900F91EC9 /* icon_audio@2x.png */,
 				6823146B14F9111900F91EC9 /* icon_setting.png */,
@@ -246,6 +259,7 @@
 				6823147614F9111900F91EC9 /* icon_video@2x.png in Resources */,
 				6823147714F9111900F91EC9 /* Icon.png in Resources */,
 				6823147814F9111900F91EC9 /* Icon@2x.png in Resources */,
+				68BC2B1B1632FF4E006EC8B3 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +281,8 @@
 				6823149014F9117E00F91EC9 /* SSSettingManager.m in Sources */,
 				6823149114F9117E00F91EC9 /* SSSettingPickerView.m in Sources */,
 				68BFF0FA14F92D34005EEA20 /* SSListCell.m in Sources */,
+				969AB50293EC162BA2560D22 /* UITabBarController+RotationForiOS6.m in Sources */,
+				96930CC6C3377D916E58C8B3 /* UINavigationController+RotationForiOS6.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,12 +348,14 @@
 		6823146214F90F0B00F91EC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shintarou Kinoshita (BC5AHZB247)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shintarou Kinoshita (BC5AHZB247)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeSeeker/SwipeSeeker-Prefix.pch";
 				INFOPLIST_FILE = "SwipeSeeker/SwipeSeeker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "A2C679E1-AD88-4D7F-B8AC-6103164968FE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A2C679E1-AD88-4D7F-B8AC-6103164968FE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

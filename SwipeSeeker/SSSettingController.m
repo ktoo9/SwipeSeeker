@@ -32,7 +32,18 @@
 {
     [super viewWillAppear:animated];
 
-    self.tableView.backgroundColor = [UIColor grayColor];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0) {
+        // ios6
+        UIView *bgView = [[UIView alloc] initWithFrame:self.tableView.frame];
+        bgView.backgroundColor = [UIColor grayColor];
+        self.tableView.backgroundView = bgView;
+    } else {
+        // not ios6
+        self.tableView.backgroundColor = [UIColor grayColor];
+    }
+
     NSIndexPath* indexPath;
     indexPath = [self.tableView indexPathForSelectedRow];
     if (indexPath) {
@@ -44,10 +55,9 @@
     }
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if (interfaceOrientation == UIInterfaceOrientationPortrait) return YES;
-    return NO;
+#pragma mark - Rotate
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 #pragma mark - TableViewDataSource

@@ -79,19 +79,25 @@
     [self _saveAtTime:self.moviePlayer.currentPlaybackTime];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+#pragma mark - Rotate
+- (BOOL)shouldAutorotate
 {
-    for (NSString* suffix in [SSMediaManager sharedManager].videoSuffixes) {
-        if ([self.moviePlayer.contentURL.pathExtension isEqualToString:suffix]) {
-            if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) return YES;
-        }
-    }
-    for (NSString* suffix in [SSMediaManager sharedManager].audioSuffixes) {
-        if ([self.moviePlayer.contentURL.pathExtension isEqualToString:suffix]) {
-            if (toInterfaceOrientation == UIInterfaceOrientationPortrait) return YES;
-        }
-    }
-	return NO;
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
+
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
 #pragma mark - Gesture Action

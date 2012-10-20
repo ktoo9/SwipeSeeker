@@ -27,21 +27,23 @@
     audioListController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"audio" image:[UIImage imageNamed:@"icon_audio.png"] tag:0];
     
     SSSettingController* settingController = [[SSSettingController alloc] initWithStyle:UITableViewStyleGrouped];
+    settingController.navigationItem.title = @"setting";
     settingController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"setting" image:[UIImage imageNamed:@"icon_setting.png"] tag:0];
     
     NSArray* controllers;
     controllers = [NSArray arrayWithObjects:
-                   [[UINavigationController alloc] initWithRootViewController:videoListController],
-                   [[UINavigationController alloc] initWithRootViewController:audioListController],
-                   settingController, nil];
+            [[UINavigationController alloc] initWithRootViewController:videoListController],
+            [[UINavigationController alloc] initWithRootViewController:audioListController],
+            [[UINavigationController alloc] initWithRootViewController:settingController],
+            nil];
+//    NSArray* controllers;
+//    controllers = [NSArray arrayWithObjects:videoListController, audioListController, settingController, nil];
 
     _rootController = [[UITabBarController alloc] init];
     [_rootController setViewControllers:controllers animated:NO];
-    [_window addSubview:_rootController.view];
+    _window.rootViewController = _rootController;
     
     [_window makeKeyAndVisible];
-    
-    return YES;
 }
 
 - (void)applicationWillTerminate:(UIApplication*)application
