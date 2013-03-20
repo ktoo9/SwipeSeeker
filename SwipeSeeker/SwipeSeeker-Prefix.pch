@@ -9,6 +9,11 @@
 #endif
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+  #import <MediaPlayer/MediaPlayer.h>
+  #import <AVFoundation/AVFoundation.h>
+  #import <AVFoundation/AVAsset.h>
 #endif
+
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)

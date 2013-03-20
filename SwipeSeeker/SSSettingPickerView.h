@@ -1,18 +1,4 @@
-#import <UIKit/UIKit.h>
-
-@interface SSSettingPickerView : UIView
-<UIPickerViewDataSource, UIPickerViewDelegate>
-{
-    UIToolbar* _toolbar;
-    UIPickerView* _picker;
-
-    NSArray* _settingItems;
-    
-    NSArray* _items;
-    NSArray* _numItems;
-
-    void (^completion)(NSString* selected);
-}
+@interface SSSettingPickerView : UIView <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property(nonatomic, strong) NSIndexPath* selectedCell;
 

@@ -1,11 +1,6 @@
-#import <Foundation/Foundation.h>
-
 @class SSSetting;
 
 @interface SSSettingManager : NSObject
-{
-    NSMutableArray* _settings;
-}
 
 @property (nonatomic, readonly, strong) NSArray* settings;
 @property (nonatomic, readonly, strong) NSArray* allActions;

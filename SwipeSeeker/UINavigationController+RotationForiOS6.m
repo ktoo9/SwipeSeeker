@@ -5,17 +5,17 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 60000
 - (BOOL)shouldAutorotate
 {
-    return NO;
+  return NO;
 }
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskAll;
+  return UIInterfaceOrientationMaskAll;
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
-    return UIInterfaceOrientationPortrait;
+  return UIInterfaceOrientationPortrait;
 }
 #endif
 
